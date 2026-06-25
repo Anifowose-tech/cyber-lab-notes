@@ -2,7 +2,7 @@
 Welcome to my cybersecurity home lab documentation! This repository tracks my journey in building an enterprise-style defensive environment.
 
 ## 🛠️ Lab Architecture
-- [ ] Active Directory Domain Controller (Windows Server 2022)
+- [ !] Active Directory Domain Controller (Windows Server 2022)
 - [ ] End-user client (Windows 10/11)
 - [ ] SIEM/Log Management (Wazuh)
 
