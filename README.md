@@ -43,11 +43,17 @@ To establish a baseline developer environment, learn core terminal navigation, a
 
 ## Repository Structure
 ```text
-cyber-summer-fundamentals/
+cyber-lab-notes/
 ├── README.md
+├── captures/
+│   └── ping_dns_baseline.pcapng
+├── scans/
+│   ├── scanme_basic.txt
+│   └── scanme_services.txt
 ├── scripts/
 │   └── system_auditor.py
 └── screenshots/
     ├── vscode_setup.png
     ├── git_verify.png
-    └── python_output.png
+    ├── python_output.png
+    └── wireshark_icmp.png
