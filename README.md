@@ -19,6 +19,19 @@
 * Verified encapsulation process across the OSI model layers.
 * Confirmed DNS translates human-readable hostnames (`google.com`) to Layer 3 IP addresses before establishing ICMP communication.
 
+## Network Reconnaissance: Nmap Port Audit
+
+### Target: scanme.nmap.org
+
+| Port Number | Protocol | State | Service | Discovered Version |
+| :--- | :--- | :--- | :--- | :--- |
+| 22 | TCP | Open | SSH | OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0) |
+| 80 | TCP | Open | HTTP | Apache httpd 2.4.7 ((Ubuntu)) |
+
+### Takeaways
+* **Port Discovery:** Identified active services exposed on public target infrastructure.
+* **Banner Grabbing (`-sV`):** Extracted service versions necessary for patch management and threat analysis.
+
 ## Project Goal
 To establish a baseline developer environment, learn core terminal navigation, and deploy a Python script that gathers host system metrics for basic IT asset auditing.
 
