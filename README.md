@@ -8,7 +8,6 @@ To establish a baseline developer environment, learn core terminal navigation, a
 * **IDE:** Visual Studio Code
 * **Language:** Python 3.x
 * **Version Control:** Git & GitHub
-
 ## Week 2: Network Traffic & Protocol Analysis
 
 ### Captured File: `captures/ping_dns_baseline.pcapng`
