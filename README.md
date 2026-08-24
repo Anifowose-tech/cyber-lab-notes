@@ -1,4 +1,4 @@
-# Cyber Summer Fundamentals - Week 1 System Auditor
+# Cyber Summer Fundamentals - System Auditor
 ## Week 2: Network Traffic & Protocol Analysis
 
 ### Captured File: `captures/ping_dns_baseline.pcapng`
