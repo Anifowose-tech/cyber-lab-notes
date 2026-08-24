@@ -1,4 +1,14 @@
 # Cyber Summer Fundamentals - Week 1 System Auditor
+
+## Project Goal
+To establish a baseline developer environment, learn core terminal navigation, and deploy a Python script that gathers host system metrics for basic IT asset auditing.
+
+## Tech Stack
+* **Operating System:** Windows 11
+* **IDE:** Visual Studio Code
+* **Language:** Python 3.x
+* **Version Control:** Git & GitHub
+
 ## Week 2: Network Traffic & Protocol Analysis
 
 ### Captured File: `captures/ping_dns_baseline.pcapng`
@@ -32,14 +42,21 @@
 * **Port Discovery:** Identified active services exposed on public target infrastructure.
 * **Banner Grabbing (`-sV`):** Extracted service versions necessary for patch management and threat analysis.
 
-## Project Goal
-To establish a baseline developer environment, learn core terminal navigation, and deploy a Python script that gathers host system metrics for basic IT asset auditing.
+## Log Analysis: Linux Authentication Audit
 
-## Tech Stack
-* **Operating System:** Windows 11
-* **IDE:** Visual Studio Code
-* **Language:** Python 3.x
-* **Version Control:** Git & GitHub
+### Analyzed Log: `auth.log`
+
+#### Parsing Command Executed
+`grep -i "failed" auth.log | grep -oE "([0-9]{1,3}\.){3}[0-9]{1,3}" | sort | uniq -c | sort -nr`
+
+#### High-Frequency Failed Login IP Addresses
+| Attempt Count | Source IP Address | Incident Type |
+| :--- | :--- | :--- |
+| 46 | 163.27.187.39 | Potential SSH Brute Force |
+
+### Takeaways
+* **Log Triage:** Leveraged Linux CLI piping (`grep`, `awk`, `sort`, `uniq`) to extract actionable security metrics from raw system logs.
+* **Threat Detection:** Identified top offender IP addresses exhibiting brute-force indicators for firewalls or SIEM blocklists.
 
 ## Repository Structure
 ```text
