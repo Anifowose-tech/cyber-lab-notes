@@ -42,15 +42,6 @@ To establish a baseline developer environment, learn core terminal navigation, a
 * **Port Discovery:** Identified active services exposed on public target infrastructure.
 * **Banner Grabbing (`-sV`):** Extracted service versions necessary for patch management and threat analysis.
 
-## Project Goal
-To establish a baseline developer environment, learn core terminal navigation, and deploy a Python script that gathers host system metrics for basic IT asset auditing.
-
-## Tech Stack
-* **Operating System:** Windows 11
-* **IDE:** Visual Studio Code
-* **Language:** Python 3.x
-* **Version Control:** Git & GitHub
-
 ## Repository Structure
 ```text
 cyber-lab-notes/
